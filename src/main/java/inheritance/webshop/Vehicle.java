@@ -57,11 +57,11 @@ public class Vehicle extends Product {
     }
 
 
-
-    @Override
+@Override
     public String toString() {
         return "Vehicle [manufacturer=" + manufacturer + ", model=" + model + ", year=" + year + ", toString()="
                 + super.toString() + "]";
     }
+    
     
 }
