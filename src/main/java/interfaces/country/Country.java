@@ -14,7 +14,7 @@ package interfaces.country;
  * Read more at
  * https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Comparable.html
  */
-public class Country {
+public class Country implements Comparable<Country>{
 
     private final String name;
     private final int population;
@@ -37,6 +37,14 @@ public class Country {
         return this.name + ", population: " + this.population;
     }
 
+    @Override
+    public int compareTo(Country other) {
+        // TODO Auto-generated method stub
+        //throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        return Integer.compare(this.population, other.population);
+    }
+
     // TODO: implement the compareTo method. You also need to use the `implements`
     // keyword in the class declaration above.
+    
 }
