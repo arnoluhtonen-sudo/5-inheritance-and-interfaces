@@ -14,6 +14,8 @@ package interfaces.country;
  * Read more at
  * https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Comparable.html
  */
+// oma lähde: https://www.geeksforgeeks.org/java/comparable-interface-in-java-with-examples/
+
 public class Country implements Comparable<Country>{
 
     private final String name;
